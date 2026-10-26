@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.cobblemonorigins.tweaks.mixin.cosmetics",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "PokeBallRendererMixin",
+    "PokemonRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

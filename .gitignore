@@ -1,0 +1,15 @@
+.gradle/
+build/
+run/
+run-test/
+.kotlin/
+.idea/
+*.iml
+out/
+logs/
+release/*.jar
+release/icon-old.png
+*key
+*.key
+.env*
+release/UPLOAD.md

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemon_origins_tweaks",
+  "version": "${version}",
+  "name": "Cobblemon Origins Tweaks",
+  "description": "Cobblemon tweaks from the Cobblemon Origins modpack: classic flight for bird and jet mounts (WASD follows the camera, Space ascends, Shift descends, no roll) and a client fix that keeps mods such as Cobblemon Battle Extras from failing on multiplayer servers.",
+  "authors": ["Cobblemon Origins"],
+  "license": "MIT",
+  "icon": "assets/cobblemon_origins_tweaks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      { "adapter": "kotlin", "value": "dev.cobblemonorigins.tweaks.flight.ClassicFlight" }
+    ],
+    "client": [
+      { "adapter": "kotlin", "value": "dev.cobblemonorigins.tweaks.cosmetics.CosmeticsClient" }
+    ]
+  },
+  "mixins": [
+    "cobblemon_origins_tweaks.mixins.json",
+    { "config": "cobblemon_origins_tweaks.cosmetics.mixins.json", "environment": "client" }
+  ],
+  "accessWidener": "cobblemon_origins_tweaks.accesswidener",
+  "depends": {
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.16",
+    "cobblemon": ">=1.8.2 <1.8.3",
+    "fabric-api": ">=0.116.17",
+    "fabric-language-kotlin": ">=1.13.6+kotlin.2.2.20"
+  }
+}

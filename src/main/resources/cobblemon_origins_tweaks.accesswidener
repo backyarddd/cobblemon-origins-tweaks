@@ -1,0 +1,3 @@
+accessWidener v2 named
+# Space-to-ascend reads the rider's jump input, the same field Cobblemon's hover flight reads.
+accessible field net/minecraft/world/entity/LivingEntity jumping Z
