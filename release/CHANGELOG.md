@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4+1.21.1
+
+- Poke Ball skins (Cobblemon Origins server cosmetics) now also show on the ball in your hand while you recall a Pokemon, in first person, in third person and for other players. Before, the hand ball always used the plain Cobblemon texture.
+- Singleplayer and servers without the cosmetics are unchanged: with no skin known, the hand ball draws exactly as before.
+- Still requires exactly Cobblemon 1.8.2. Install the same version on the server and on every client.
+
 ## 1.0.3+1.21.1
 
 - Removed the **Mewtwo DNA** item (`cobblemon_origins_tweaks:mewtwo_dna`), its icon and its lang lines. The Cobblemon Origins modpack now revives Mewtwo from LumyMon's Ancient DNA and Cloning Catalyst instead. Mewtwo DNA still in a world is lost when it loads (unknown item), and datapack files that name the item fail to load.
